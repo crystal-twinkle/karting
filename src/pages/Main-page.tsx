@@ -1,5 +1,5 @@
 import React from 'react';
-import RatingTaple from '../components/Rating-table';
+import RatingTable from '../components/Rating-table';
 import ContactUs from '../components/Contact-us';
 
 export function MainPage() {
@@ -9,9 +9,13 @@ export function MainPage() {
     <div>
       <div className="start">
       </div>
-      <div className="d-flex custom-gradient justify-content-center align-items-center">
-        <RatingTaple/>
-        <ContactUs/>
+      <div className="p-[5.6rem] custom-gradient">
+        <div className="d-flex justify-content-evenly align-items-center">
+          <RatingTable/>
+          <div className="w-0.5 dark h-[43rem] bg-[#FCD700]"/>
+          <ContactUs/>
+        </div>
+        <h2> Partners </h2>
       </div>
     </div>
   );

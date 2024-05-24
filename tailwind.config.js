@@ -6,12 +6,7 @@ export default {
   ],
   theme: {
     extend: {
-      colors: {
-        'dark': '#12151f',
-      },
-      width: {
-        'w-45': '45%',
-      },
+      'dark': '#111111',
     },
   },
   plugins: [],
