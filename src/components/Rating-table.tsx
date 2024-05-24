@@ -9,6 +9,10 @@ const RatingTable = () => {
     { id: 5, values: ["", "", "", ""] }
   ];
 
+  const explore = () => {
+    //code
+  }
+
   return (
     <div className="w-[45%] d-flex flex-column align-items-center">
       <table className="bg-inherit table-auto w-full">
@@ -32,7 +36,7 @@ const RatingTable = () => {
         ))}
         </tbody>
       </table>
-      <button className="w-[302px] btn btn-primary shadow">Explore</button>
+      <button className="w-[302px] btn btn-primary shadow" onClick={explore}>Explore</button>
     </div>
   );
 };

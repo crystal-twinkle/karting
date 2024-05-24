@@ -1,6 +1,10 @@
 import React from 'react';
 
 const ContactUs = () => {
+  const sendMessage = () => {
+    //code
+  }
+
   return (
     <div>
       <div className="container">
@@ -19,7 +23,7 @@ const ContactUs = () => {
                 <label htmlFor="message">Your text</label>
                 <textarea className="form-control" id="message" rows="3" placeholder="Enter your message"></textarea>
               </div>
-              <button type="submit" className="btn btn-primary">Send message</button>
+              <button type="submit" className="btn btn-primary" onClick={sendMessage}>Send message</button>
             </form>
           </div>
         </div>
