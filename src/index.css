@@ -66,9 +66,12 @@ button:focus-visible {
   background-size: cover;
   background-position: center center;
   height: 752px;
+  margin: auto;
+}
+
+.main-page {
   width: 100%;
   max-width: 1920px;
-  margin: auto;
 }
 
 .custom-gradient {

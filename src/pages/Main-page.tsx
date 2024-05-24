@@ -6,7 +6,7 @@ export function MainPage() {
 
 
   return (
-    <div>
+    <div className="main-page">
       <div className="start">
       </div>
       <div className="p-[5.6rem] custom-gradient">
