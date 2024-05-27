@@ -5,8 +5,14 @@
   font-style: normal;
 }
 
+@layer base {
+  .font-pro-racing {
+    font-family: 'Pro Racing Slant', sans-serif;
+  }
+}
+
 body {
-  font-family: 'Pro Racing Slant', sans-serif;
+  @apply font-pro-racing;
 }
 
 :root {

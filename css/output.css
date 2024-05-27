@@ -472,6 +472,10 @@ video {
   display: none;
 }
 
+.font-pro-racing {
+  font-family: 'Pro Racing Slant', sans-serif;
+}
+
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
