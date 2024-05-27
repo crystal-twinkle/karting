@@ -61,7 +61,7 @@ button:focus-visible {
 }
 
 .start {
-  background-image: url('./assets/depositphotos_77491986-stock-photo-unknown-pilots-competing.png');
+  background-image: url('src/assets/depositphotos.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
