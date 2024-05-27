@@ -10,6 +10,9 @@ module.exports = {
       color: {
         'black': '#1E1E1E',
       },
+      fontFamily: {
+        'formula1': ['"Formula1"', 'sans-serif'],
+      },
     }
   },
   plugins: [],

@@ -5,9 +5,19 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Formula1';
+  src: url('../fonts/Formula 1.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 @layer base {
   .font-pro-racing {
     font-family: 'Pro Racing Slant', sans-serif;
+  }
+  .font-formula1 {
+    font-family: 'Formula1', sans-serif;
   }
 }
 
