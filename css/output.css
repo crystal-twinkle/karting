@@ -8,16 +8,6 @@
   font-style: normal;
 }
 
-@font-face {
-  font-family: 'Formula1';
-
-  src: url('../fonts/Formula 1.ttf') format('truetype');
-
-  font-weight: normal;
-
-  font-style: normal;
-}
-
 body {
   font-family: 'Pro Racing Slant', sans-serif;
 }
@@ -32,6 +22,11 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+button {
+  cursor: pointer;
+  z-index: 3;
 }
 
 /*
@@ -486,10 +481,6 @@ video {
   font-family: 'Pro Racing Slant', sans-serif;
 }
 
-.font-formula1 {
-  font-family: 'Formula1', sans-serif;
-}
-
 *, ::before, ::after {
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
@@ -632,36 +623,20 @@ video {
   }
 }
 
-.visible {
-  visibility: visible;
-}
-
-.collapse {
-  visibility: collapse;
-}
-
-.relative {
-  position: relative;
-}
-
 .m-auto {
   margin: auto;
 }
 
-.block {
-  display: block;
+.mt-\[37px\] {
+  margin-top: 37px;
+}
+
+.flex {
+  display: flex;
 }
 
 .table {
   display: table;
-}
-
-.contents {
-  display: contents;
-}
-
-.hidden {
-  display: none;
 }
 
 .h-\[4\.2rem\] {
@@ -696,10 +671,6 @@ video {
   width: 180px;
 }
 
-.w-\[302px\] {
-  width: 302px;
-}
-
 .w-\[45\%\] {
   width: 45%;
 }
@@ -712,25 +683,16 @@ video {
   table-layout: auto;
 }
 
-.border-collapse {
-  border-collapse: collapse;
+.flex-col {
+  flex-direction: column;
 }
 
-.transform {
-  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-}
-
-.resize {
-  resize: both;
+.items-center {
+  align-items: center;
 }
 
 .border {
   border-width: 1px;
-}
-
-.bg-\[\#1E1E1E\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(30 30 30 / var(--tw-bg-opacity));
 }
 
 .bg-\[\#FCD700\] {
@@ -746,8 +708,8 @@ video {
   padding: 5.6rem;
 }
 
-.font-formula1 {
-  font-family: "Formula1", sans-serif;
+.uppercase {
+  text-transform: uppercase;
 }
 
 .text-white {
@@ -755,31 +717,13 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
-.underline {
-  text-decoration-line: underline;
-}
-
 .antialiased {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-.shadow {
-  --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
-  --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
-.outline {
-  outline-style: solid;
-}
-
 .grayscale {
   --tw-grayscale: grayscale(100%);
-  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
-}
-
-.filter {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
@@ -789,6 +733,7 @@ video {
 }
 
 body {
+  letter-spacing: 0.1rem;
   color: #FFFFFF !important;
   margin: 0;
   min-width: 320px;
@@ -798,4 +743,28 @@ body {
 h1 {
   font-size: 3.2em;
   line-height: 1.1;
+}
+
+.background-black {
+  background-color: rgba(30, 30, 30);
+}
+
+.dark-blue {
+  color: #003062
+}
+
+.light-green {
+  color: #00E293
+}
+
+.button {
+  border: none;
+  background-color: #00E293;
+  padding: 5px 20px;
+  color: #003062;
+  touch-action: manipulation;
+}
+
+.custom-btn:hover {
+  background-color: #00c57a;
 }
